@@ -13,7 +13,7 @@ https://k8-proxy.github.io/k8-proxy-documentation/docs/flavors/flavor-a/manual-s
     ```
     cd icap-infrastructure/adaptation
     kubectl create ns icap-adaptation
-    kubectl create -n icap-adaptation secret generic transactionstoresecret --from-literal=accountName=guest --from-literal=accountKey=guest
+    kubectl create -n icap-adaptation secret generic transactionStoreSecret --from-literal=accountName=guest --from-literal=accountKey=guest
     ```
 2. Follow the doc https://github.com/k8-proxy/icap-infrastructure#adaptation-cluster until the **helm install** command
 3. Run the command
